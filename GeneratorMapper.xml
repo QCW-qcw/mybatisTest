@@ -47,8 +47,11 @@
         <!-- 要生成的表 tableName是数据库中的表名 domainObjectName是实体类名 mapperName是mapper名-->
         <!--下面是示例-->
 
-
-        <table tableName="labels"
+        <table tableName="student" domainObjectName="Student" mapperName="StudentMapper" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false">
+        <!-- 数据库表主键 -->
+        <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
+        </table>
+<!--        <table tableName="labels"
                domainObjectName="Labels"
                mapperName="LabelsMapper"
                enableCountByExample="false"
@@ -56,10 +59,10 @@
                enableDeleteByExample="false"
                enableSelectByExample="false"
                selectByExampleQueryId="false">
-            <!-- 数据库表主键 -->
+            &lt;!&ndash; 数据库表主键 &ndash;&gt;
             <generatedKey column="label_id" sqlStatement="Mysql" identity="true"/>
-        </table>
-        <table tableName="label_system"
+        </table>-->
+       <!-- <table tableName="label_system"
                domainObjectName="LabelSystem"
                mapperName="LabelSystemMapper"
                enableCountByExample="false"
@@ -67,8 +70,8 @@
                enableDeleteByExample="false"
                enableSelectByExample="false"
                selectByExampleQueryId="false">
-            <!-- 数据库表主键 -->
+            &lt;!&ndash; 数据库表主键 &ndash;&gt;
             <generatedKey column="label_system_id" sqlStatement="Mysql" identity="true"/>
-        </table>
+        </table>-->
     </context>
 </generatorConfiguration>
